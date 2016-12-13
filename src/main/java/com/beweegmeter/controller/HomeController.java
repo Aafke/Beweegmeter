@@ -1,7 +1,13 @@
 package com.beweegmeter.controller;
 
-/**
- * Created by ame20844 on 13-12-2016.
- */
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class HomeController {
+
+    @RequestMapping("/")
+    public String home(){
+        return "start beweegmeter";
+    }
 }
